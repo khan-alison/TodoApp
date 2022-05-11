@@ -167,7 +167,7 @@ export default function TodoInput(props: ITodoInputTask) {
           </label>
           <select
               // ref={priorityRef}
-            value={props.onAddNewTask ? "Normal"|| props.piority :props.piority || "Normal"}
+              value={props.onAddNewTask ? piority || props.piority :props.piority || "Normal"}
             className="border focus:outline-none border  p-1.5 rounded-md"
             onChange={handleChangePiority}
           >
