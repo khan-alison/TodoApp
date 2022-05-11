@@ -1,6 +1,20 @@
-export const setTaskList =  (payload: any)=>{
+export const addTaskList =  (payload: any)=>{
     return{
-        type: 'SET_TASK_LIST',
+        type: 'ADD_TASK_LIST',
+        payload,
+    }
+}
+
+export const updateTaskList =  (payload: any)=>{
+    return{
+        type: 'UPDATE_TASK_LIST',
+        payload,
+    }
+}
+
+export const removeTaskList =  (payload: any)=>{
+    return{
+        type: 'REMOVE_TASK_LIST',
         payload,
     }
 }
